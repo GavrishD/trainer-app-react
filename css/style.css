@@ -1,0 +1,48 @@
+.blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.income {
+  margin: 0 20px 0 0;
+  padding: 30px 20px;
+  width: 672px;
+  background-color: var(--grey-dark);
+  border-radius: 15px;
+}
+
+.income__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.income__info {
+  display: grid;
+  row-gap: 8px;
+}
+
+.income__title {
+  font-size: 20px;
+  font-weight: 600;
+}
+.income__title span {
+  font-weight: 400;
+}
+
+.income__sum {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--yellow);
+}
+
+.income__link {
+  width: 140px;
+}
