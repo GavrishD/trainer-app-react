@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
 :root {
-    --bg-color: #0F0F0F;
-    --white: #FFFFFF;
-    --yellow: #F4CA8D;
-    --grey: #A0A0A0;
+    --bg-color: #0f0f0f;
+    --navbar-bg: #151515;
+    --white: #ffffff;
+    --yellow: #f4ca8d;
+    --grey: #a0a0a0;
     --grey-dark: #212121;
 
     --item-bg: rgba(255, 255, 255, 0.03);
@@ -19,7 +20,7 @@ body {
     color: var(--white);
 }
 
-[class*="__container"]{
+[class*='__container'] {
     max-width: 1260px;
     margin: 0px auto;
     padding: 0px 15px;
@@ -34,10 +35,14 @@ svg {
     gap: 30px;
 }
 
+.dashboard {
+    width: 100%;
+}
+
+//=====delete
 .button {
     display: flex;
 }
-
 .link {
     display: flex;
     justify-content: center;
@@ -55,3 +60,4 @@ svg {
         background-color: var(--btn-hover);
     }
 }
+//=======

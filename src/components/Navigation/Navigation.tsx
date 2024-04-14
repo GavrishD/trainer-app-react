@@ -1,47 +1,43 @@
-import Box from "@mui/material/Box";
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import HomeRoundedIcon from "@mui/icons-material/HomeRounded";
-import InsertChartRoundedIcon from "@mui/icons-material/InsertChartRounded";
-import PeopleOutlineRoundedIcon from "@mui/icons-material/PeopleOutlineRounded";
-import CalendarMonthOutlinedIcon from "@mui/icons-material/CalendarMonthOutlined";
-import './style.scss';
+import Box from '@mui/material/Box';
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
+import InsertChartRoundedIcon from '@mui/icons-material/InsertChartRounded';
+import PeopleOutlineRoundedIcon from '@mui/icons-material/PeopleOutlineRounded';
+import CalendarMonthOutlinedIcon from '@mui/icons-material/CalendarMonthOutlined';
+import styles from './navigation.module.scss';
 
 const Navigation = () => {
     return (
-        <Box sx={{ 
-            width: '100%', 
-            height: '100vh', 
-            maxWidth: 268, 
-            bgcolor: '#151515', 
-            border: "1px solid #A0A0A0",
-            borderRadius: 4
-            }} 
-        >
-            <nav className="sidebar__nav">
-                <div className="sidebar__title"><span>Awesome</span>Trainer</div>
-                <div className="sidebar__menu">menu</div>
+        <Box className={styles.sidebar}>
+            <nav className={styles.sidebar__nav}>
+                <div className={styles.sidebar__title}>
+                    <span>Awesome</span>Trainer
+                </div>
+                <div className={styles.sidebar__menu}>menu</div>
                 <List>
                     <ListItem>
-                        <button className="sidebar__item active">
+                        <button
+                            className={`${styles.sidebar__item} ${styles.active}`}
+                        >
                             <HomeRoundedIcon />
                             <div>Dashboard</div>
                         </button>
                     </ListItem>
                     <ListItem>
-                        <button className="sidebar__item">
+                        <button className={styles.sidebar__item}>
                             <InsertChartRoundedIcon />
                             <div>Income</div>
                         </button>
                     </ListItem>
                     <ListItem>
-                        <button className="sidebar__item">
+                        <button className={styles.sidebar__item}>
                             <PeopleOutlineRoundedIcon />
                             <div>Clients</div>
                         </button>
                     </ListItem>
                     <ListItem>
-                        <button className="sidebar__item">
+                        <button className={styles.sidebar__item}>
                             <CalendarMonthOutlinedIcon />
                             <div>Training schedule</div>
                         </button>
@@ -50,8 +46,7 @@ const Navigation = () => {
             </nav>
         </Box>
     );
-
-}
+};
 
 export default Navigation;
 
@@ -67,7 +62,8 @@ export default Navigation;
 // import InboxIcon from "@mui/icons-material/Inbox";
 // import DraftsIcon from "@mui/icons-material/Drafts";
 
-{/* <List>
+{
+    /* <List>
     <ListItem>
         <ListItemButton>
             <ListItemIcon>
@@ -100,4 +96,5 @@ export default Navigation;
             <ListItemText primary="Training schedule" sx={{ color: '#F4CA8D' }}/>
         </ListItemButton>
     </ListItem>
-</List>; */}
+</List>; */
+}

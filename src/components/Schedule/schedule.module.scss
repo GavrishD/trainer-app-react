@@ -1,0 +1,73 @@
+.schedule {
+    margin: 30px 0;
+    padding: 30px 20px;
+    background-color: var(--grey-dark);
+    border-radius: 15px;
+
+    &__title {
+        margin: 0 0 25px 0;
+        font-weight: 600;
+        font-size: 20px;
+        color: var(--yellow);
+    }
+    &__items {
+        display: flex;
+        gap: 9px;
+        margin: 0 0 30px 0;
+    }
+
+    &__date {
+        margin: 0 0 5px 0;
+        text-align: center;
+        font-weight: 400;
+        font-size: 13px;
+    }
+
+    &__clients {
+        padding: 10px 15px;
+        width: 120px;
+        height: 185px;
+        overflow-y: scroll;
+        font-size: 12px;
+        background-color: var(--item-bg);
+        border: 1px solid var(--yellow);
+        border-radius: 10px;
+
+        li:not(:last-child) {
+            margin: 0 0 7px 0;
+        }
+    }
+
+    &__time {
+        font-weight: 500;
+        margin: 0 10px 0 0;
+    }
+
+    &__button {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 20px;
+        width: 227px;
+        height: 40px;
+        font-size: 16px;
+        font-weight: 600;
+        background-color: var(--yellow);
+        color: var(--grey-dark);
+        border-radius: 8px;
+        transition: all 0.3s ease 0s;
+
+        &:hover {
+            background-color: var(--btn-hover);
+        }
+
+        path {
+            color: var(--grey-dark);
+        }
+    }
+}

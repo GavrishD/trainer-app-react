@@ -1,0 +1,60 @@
+.income {
+    margin: 0 20px 0 0;
+    padding: 30px 20px;
+    width: 672px;
+    background-color: var(--grey-dark);
+    border-radius: 15px;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__info {
+        display: grid;
+        row-gap: 8px;
+    }
+
+    &__title {
+        font-size: 20px;
+        font-weight: 600;
+        span {
+            font-weight: 400;
+        }
+    }
+
+    &__sum {
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--yellow);
+    }
+
+    &__button {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 20px;
+        width: 140px;
+        height: 40px;
+        font-size: 16px;
+        font-weight: 600;
+        background-color: var(--yellow);
+        color: var(--grey-dark);
+        border-radius: 8px;
+        transition: all 0.3s ease 0s;
+
+        &:hover {
+            background-color: var(--btn-hover);
+        }
+
+        path {
+            color: var(--grey-dark);
+        }
+    }
+}

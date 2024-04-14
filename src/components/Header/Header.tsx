@@ -1,11 +1,11 @@
 import PersonOutlineRoundedIcon from '@mui/icons-material/PersonOutlineRounded';
-import './style.scss';
+import styles from './header.module.scss';
 
 const Header = () => {
     return (
-        <header className="header">
-            <div className="header__title">Hi, friend!</div>
-            <div className="header__user"><PersonOutlineRoundedIcon /></div>
+        <header className={styles.header}>
+            <div className={styles.header__title}>Hi, friend!</div>
+            <div className={styles.header__user}><PersonOutlineRoundedIcon /></div>
         </header>
     )
 }

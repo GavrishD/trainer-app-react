@@ -1,0 +1,50 @@
+.clients {
+    padding: 30px 20px;
+    width: 240px;
+    height: 237px;
+    background-color: var(--grey-dark);
+    border-radius: 15px;
+    border: 1px solid var(--yellow);
+
+    &__title {
+        font-weight: 600;
+        font-size: 20px;
+        text-align: center;
+        color: var(--yellow);
+    }
+
+    &__number {
+        margin: 24px 0;
+        font-weight: 600;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    &__button {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 20px;
+        width: 151px;
+        height: 40px;
+        font-size: 16px;
+        font-weight: 600;
+        background-color: var(--yellow);
+        color: var(--grey-dark);
+        border-radius: 8px;
+        transition: all 0.3s ease 0s;
+
+        &:hover {
+            background-color: var(--btn-hover);
+        }
+
+        path {
+            color: var(--grey-dark);
+        }
+    }
+}
