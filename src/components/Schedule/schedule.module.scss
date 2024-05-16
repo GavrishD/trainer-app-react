@@ -10,7 +10,7 @@
         font-size: 20px;
         color: var(--yellow);
     }
-    &__items {
+    &__week {
         display: flex;
         gap: 9px;
         margin: 0 0 30px 0;
@@ -23,7 +23,7 @@
         font-size: 13px;
     }
 
-    &__clients {
+    ul {
         padding: 10px 15px;
         width: 120px;
         height: 185px;
@@ -33,14 +33,15 @@
         border: 1px solid var(--yellow);
         border-radius: 10px;
 
-        li:not(:last-child) {
-            margin: 0 0 7px 0;
-        }
-    }
+        li {
+            &:not(:last-child) {
+                margin: 0 0 7px 0;
+            }
 
-    &__time {
-        font-weight: 500;
-        margin: 0 10px 0 0;
+            span {
+                padding: 0 3px;
+            }
+        }
     }
 
     &__button {

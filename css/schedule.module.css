@@ -1,0 +1,79 @@
+.schedule {
+  margin: 30px 0;
+  padding: 30px 20px;
+  background-color: var(--grey-dark);
+  border-radius: 15px;
+}
+.schedule__title {
+  margin: 0 0 25px 0;
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--yellow);
+}
+.schedule__week {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 9px;
+  margin: 0 0 30px 0;
+}
+.schedule__date {
+  margin: 0 0 5px 0;
+  text-align: center;
+  font-weight: 400;
+  font-size: 13px;
+}
+.schedule ul {
+  padding: 10px 15px;
+  width: 120px;
+  height: 185px;
+  overflow-y: scroll;
+  font-size: 12px;
+  background-color: var(--item-bg);
+  border: 1px solid var(--yellow);
+  border-radius: 10px;
+}
+.schedule ul li:not(:last-child) {
+  margin: 0 0 7px 0;
+}
+.schedule ul li span {
+  padding: 0 3px;
+}
+.schedule__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.schedule__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+  width: 227px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: var(--yellow);
+  color: var(--grey-dark);
+  border-radius: 8px;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.schedule__link:hover {
+  background-color: var(--btn-hover);
+}
+.schedule__link path {
+  color: var(--grey-dark);
+}
